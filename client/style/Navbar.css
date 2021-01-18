@@ -1,0 +1,31 @@
+
+.logo {
+  float: left;
+  color:rgb(247, 247, 247);
+  padding: 20px;
+  margin-right: 80px;
+  cursor: pointer;
+}
+
+.category {
+  display:inline-block;
+  margin-top: 10px;
+  color:rgb(247, 247, 247);
+  padding: 20px;
+  cursor: pointer;
+}
+.category:hover{
+  opacity: .3;
+}
+
+.input{
+  float: right;
+  height: 30px;
+  width: 20%;
+  margin-top: 20px;
+  margin-right: 30px;
+
+
+  
+
+}

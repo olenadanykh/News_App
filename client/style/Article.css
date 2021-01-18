@@ -1,0 +1,96 @@
+
+.article{
+  background-color: rgb(246, 244, 244);
+  box-shadow: rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+} 
+.search-article{
+  background-color: rgb(246, 244, 244);
+  box-shadow: rgb(255, 255, 255);
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+.article > .image{
+  flex: 0.5 0 0%;
+}
+
+.article img {
+display: block;
+padding: 5px;
+}
+.image{
+  width: 100px;
+  height: 150px;
+}
+.text{
+  padding-left: 20px;
+}
+.search-text{
+  padding-left: 20px;
+}
+
+.article > .text{
+  flex: 2 0 0%;
+
+}
+.text h1{
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+.search-text h1{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+}
+.text h2{
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  padding: 10px;
+}
+.search-text h2{
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  padding: 10px;
+}
+.text button{
+  padding: 5px;
+  background-color:black;
+  color:rgb(253, 253, 253);
+  border-radius: 10px;
+  width: 150px;
+  margin-top: 25px;
+  margin-left: 80%;
+}
+.text button:hover{
+  background-color:rgb(253, 253, 253);
+  color: black;
+
+}
+.search-text button{
+  padding: 5px;
+  background-color:black;
+  color:rgb(253, 253, 253);
+  border-radius: 10px;
+  width: 150px;
+  margin-top: 25px;
+  margin-left: 80%;
+  
+}
+.search-text button:hover{
+  background-color:rgb(253, 253, 253);
+  color: black;
+
+}
+
