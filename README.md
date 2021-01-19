@@ -1,7 +1,8 @@
 # Top_News_App
 
 
-This is a React + Node powered news app using NYTimes News API.
+This is a React + Node powered news app using NYTimes News API: [https://developer.nytimes.com/]
+
 
 
 ![](demo.gif)
