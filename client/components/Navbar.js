@@ -22,18 +22,19 @@ export default class Navbar extends Component {
     } = this.props;
     return (
       <div>
-        <div>
+        <div className="navbar">
           <h1 onClick={handleClick} id="home" className="logo"> Top_News</h1>
           <form onSubmit={handleSearch}>
-            <input className="input" placeholder="  enter keyword ..." type="text" value={searchVal} onChange={handleChange} />
+            <input id="input" className="input" placeholder="  enter keyword ..." type="text" value={searchVal} onChange={handleChange} />
           </form>
-          <ul />
-          <li className="category" onClick={handleClick} id="home">Home</li>
-          <li className="category" onClick={handleClick} id="politics">Politics</li>
-          <li className="category" onClick={handleClick} id="business">Business</li>
-          <li className="category" onClick={handleClick} id="technology">Technology</li>
-          <li className="category" onClick={handleClick} id="sports">Sports</li>
-          <li className="category" onClick={handleClick} id="world">World</li>
+          <ul>
+            <li className="category" onClick={handleClick} id="home">Home</li>
+            <li className="category" onClick={handleClick} id="politics">Politics</li>
+            <li className="category" onClick={handleClick} id="business">Business</li>
+            <li className="category" onClick={handleClick} id="technology">Technology</li>
+            <li className="category" onClick={handleClick} id="sports">Sports</li>
+            <li className="category" onClick={handleClick} id="world">World</li>
+          </ul>
         </div>
       </div>
     );

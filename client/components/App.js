@@ -24,7 +24,7 @@ export default class App extends Component {
     fetch('http://localhost:3000/home')
       .then(res => res.json())
       .then((data) => {
-        console.log(data.results);
+        // console.log(data.results);
         this.setState({
           allArticles: data.results,
         });
@@ -70,16 +70,16 @@ export default class App extends Component {
     const { handleClick, handleSearch, handleChange } = this;
     return (
       <div className="app">
-        <div className="navbar">
-          <Navbar
-            handleClick={handleClick}
-            handleSearch={handleSearch}
-            handleChange={handleChange}
-            endpoint={endpoint}
-            searchVal={searchVal}
-          />
+        {/* <div className="navbar"> */}
+        <Navbar
+          className="navbar"
+          handleClick={handleClick}
+          handleSearch={handleSearch}
+          handleChange={handleChange}
+          searchVal={searchVal}
+        />
 
-        </div>
+        {/* </div> */}
         <div className="article-container">
           <Article
             allArticles={allArticles}

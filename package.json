@@ -5,8 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "start": "nodemon server/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon ./server/server.js & webpack serve --open",
+    "dev": "nodemon ./server/server.js & webpack serve --open & jest",
     "build": "webpack"
   },
   "repository": {
@@ -22,12 +21,18 @@
   "homepage": "https://github.com/olenadanykh/News_App#readme",
   "dependencies": {
     "@babel/core": "^7.12.10",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/plugin-transform-runtime": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
+    "@babel/preset-flow": "^7.12.1",
     "@babel/preset-react": "^7.12.10",
     "babel-loader": "^8.2.2",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "css-loader": "^5.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.5",
+    "enzyme-to-json": "^3.6.1",
     "express": "^4.17.1",
     "node": "^15.4.0",
     "node-fetch": "^2.6.1",
@@ -40,6 +45,14 @@
     "webpack-dev-server": "^3.11.2"
   },
   "devDependencies": {
+    "jest": "^26.6.3",
+    "react-test-renderer": "^16.0.0-alpha.12",
     "webpack-cli": "^4.3.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
   }
 }
